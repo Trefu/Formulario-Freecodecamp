@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Trefu/Formulario-Freecodecamp/issues"
   },
-  "homepage": "https://github.com/Trefu/Formulario-Freecodecamp#readme"
+  "homepage": "https://github.com/Trefu/Formulario-Freecodecamp#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "sass": "^1.32.8"
+  }
 }
