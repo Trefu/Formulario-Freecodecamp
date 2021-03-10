@@ -1,11 +1,14 @@
 $font-small: 0.800rem;
 $font-medium: 1.1rem;
 $font-big: 2.1rem;
-
+$blue-color:rgba(85, 118, 248, 0.885);
+$lightblue-color: rgb(73, 102, 220, 0.6);
+$white-color: rgba(255, 255, 255, 0.885);
+;
 
 body {
     position: relative;
-    background-image: url("src/assets/fondos/sc2.jpg");
+    background-image: url("../assets/fondos/sc2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,22 +26,37 @@ body::before {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba($color: #000000, $alpha: 0.6);
+    background-color: rgba(#000000, 0.8);
     z-index: -2;
 }
 
 #contenedor-general {
-    #titulo {
-        color: white;
+    color: $white-color;
+
+
+    #title {
+        color: $blue-color;
     }
 
     h2 {
-        color: white;
+        color: $lightblue-color;
     }
 
     #contenedor-form {
-        background-color: rgba(20, 19, 87, 0.57);
+        background-color: $lightblue-color;
         padding: 1.6rem;
+        min-height: 100vh;
     }
+}
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }

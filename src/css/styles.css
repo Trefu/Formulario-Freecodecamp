@@ -1,6 +1,6 @@
 body {
   position: relative;
-  background-image: url("/src/assets/fondos/background.jpg");
+  background-image: url("../assets/fondos/sc2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,21 +16,35 @@ body::before {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: -2;
 }
 
-#contenedor-general #titulo {
-  color: white;
+#contenedor-general {
+  color: rgba(255, 255, 255, 0.885);
 }
-
+#contenedor-general #title {
+  color: rgba(85, 118, 248, 0.885);
+}
 #contenedor-general h2 {
-  color: white;
+  color: rgba(73, 102, 220, 0.6);
+}
+#contenedor-general #contenedor-form {
+  background-color: rgba(73, 102, 220, 0.6);
+  padding: 1.6rem;
+  min-height: 100vh;
 }
 
-#contenedor-general #contenedor-form {
-  background-color: rgba(20, 19, 87, 0.57);
-  padding: 1.6rem;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /*# sourceMappingURL=styles.css.map */
