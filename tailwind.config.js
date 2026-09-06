@@ -6,12 +6,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: 'rgba(85, 118, 248, 0.885)',
-        surface: 'rgba(73, 102, 220, 0.6)',
-        paper: 'rgba(255, 255, 255, 0.885)'
+        brand: '#2563eb',
+        'brand-dark': '#1d4ed8',
+        navy: '#0f2747',
+        surface: 'rgba(255, 255, 255, 0.98)',
+        paper: '#ffffff'
       },
       fontFamily: {
-        display: ['RocknRoll One', 'sans-serif']
+        display: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
       }
     }
   },

@@ -5,24 +5,27 @@
 @layer base {
   html {
     min-height: 100%;
+    background-color: #081a31;
   }
 
   body {
     position: relative;
     min-height: 100vh;
     isolation: isolate;
+    background-color: #081a31;
     background-image: url('./assets/fondos/sc2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'RocknRoll One', sans-serif;
+    color: #0f172a;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
   }
 
   body::before {
-    position: absolute;
+    position: fixed;
     inset: 0;
     z-index: -1;
-    background-color: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(135deg, rgba(8, 26, 49, 0.98), rgba(11, 42, 78, 0.9));
     content: '';
     pointer-events: none;
   }
@@ -39,5 +42,27 @@
   input[type='number']::-webkit-outer-spin-button {
     margin: 0;
     appearance: none;
+  }
+}
+
+@layer components {
+  .field-label {
+    @apply mb-2 block text-sm font-bold text-navy;
+  }
+
+  .field-hint {
+    @apply mt-2 text-xs leading-5 text-slate-500;
+  }
+
+  .form-control {
+    @apply block w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 hover:border-slate-300 focus:border-brand focus:bg-white focus:ring-4 focus:ring-brand/10;
+  }
+
+  .choice-card {
+    @apply flex items-center gap-3 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 transition hover:border-brand/40 hover:bg-blue-50;
+  }
+
+  .choice-card input {
+    @apply h-4 w-4 shrink-0 accent-brand;
   }
 }
