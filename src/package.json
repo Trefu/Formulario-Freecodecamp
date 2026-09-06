@@ -1,25 +1,13 @@
 {
-  "name": "formulario",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "name": "formulario-freecodecamp-src",
+  "version": "2.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Trefu/Formulario-Freecodecamp.git"
-  },
-  "author": "Lucas Leonel Lopez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Trefu/Formulario-Freecodecamp/issues"
-  },
-  "homepage": "https://github.com/Trefu/Formulario-Freecodecamp#readme",
-  "dependencies": {
-    "bootstrap": "^4.6.0",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.1",
-    "sass": "^1.32.8"
+    "dev": "npm --prefix .. run dev",
+    "build": "npm --prefix .. run build",
+    "preview": "npm --prefix .. run preview",
+    "test": "npm --prefix .. test",
+    "lint": "npm --prefix .. run lint",
+    "typecheck": "npm --prefix .. run typecheck"
   }
 }
